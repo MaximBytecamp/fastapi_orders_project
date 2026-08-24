@@ -6,3 +6,11 @@ class Order(BaseModel):
     customer: str
     product: str 
     status: OrderStatus
+
+class OrderCreate(BaseModel):
+    customer: str = Field(min_length=1, examples=["Иван"])
+    product: str = Field(min_length=1, examples=["Мышь"])
+
+
+class Message(BaseModel):
+    message: str 
