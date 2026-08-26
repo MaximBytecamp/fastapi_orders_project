@@ -14,3 +14,6 @@ class OrderCreate(BaseModel):
 
 class Message(BaseModel):
     message: str 
+
+class StatusUpdate(BaseModel):
+    status: OrderStatus
